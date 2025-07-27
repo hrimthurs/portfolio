@@ -1,0 +1,257 @@
+html, body {
+    height: 100%;
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    color: white;
+    background: transparent;
+
+    user-select: none;
+    overflow: hidden;
+
+    font-family: Arial, Verdana, sans-serif;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+body:fullscreen::backdrop {
+    background: transparent;
+}
+
+/* MAIN CONTAINER */
+
+#wrapper_render {
+    height: 100%;
+    width: 100%;
+
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+#render_contain {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+/* LOADER */
+
+#loader {
+    width: 72px;
+    height: 72px;
+    position: absolute;
+    z-index: 2;
+    bottom: 8px;
+    left: 8px;
+
+    opacity: 0;
+
+    -webkit-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+}
+
+.loader-spinner {
+    -webkit-animation: anim-loader-spinner-arc 2.5s ease-in-out infinite, anim-loader-spinner-rotate 1.9s linear infinite;
+    animation: anim-loader-spinner-arc 2.5s ease-in-out infinite, anim-loader-spinner-rotate 1.9s linear infinite;
+}
+
+.loader-dot {
+    -webkit-animation: anim-loader-spinner-rotate 1.9s linear infinite;
+    animation: anim-loader-spinner-rotate 1.9s linear infinite;
+}
+
+@-webkit-keyframes anim-loader-spinner-rotate {
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes anim-loader-spinner-rotate {
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes anim-loader-spinner-arc {
+    from {
+        -webkit-stroke-dasharray: 0 200;
+        -webkit-stroke-dashoffset: 54;
+        stroke-dasharray: 0 200;
+        stroke-dashoffset: 54;
+    }
+    49% {
+        -webkit-stroke-dasharray: 200 0;
+        -webkit-stroke-dashoffset: 54;
+        stroke-dasharray: 200 0;
+        stroke-dashoffset: 54;
+    }
+    50% {
+        -webkit-stroke-dasharray: 200 0;
+        -webkit-stroke-dashoffset: -146;
+        stroke-dasharray: 200 0;
+        stroke-dashoffset: -146;
+    }
+    to {
+        -webkit-stroke-dasharray: 0 200;
+        -webkit-stroke-dashoffset: -346;
+        stroke-dasharray: 0 200;
+        stroke-dashoffset: -346;
+    }
+}
+
+@keyframes anim-loader-spinner-arc {
+    from {
+        -webkit-stroke-dasharray: 0 200;
+        -webkit-stroke-dashoffset: 54;
+        stroke-dasharray: 0 200;
+        stroke-dashoffset: 54;
+    }
+    49% {
+        -webkit-stroke-dasharray: 200 0;
+        -webkit-stroke-dashoffset: 54;
+        stroke-dasharray: 200 0;
+        stroke-dashoffset: 54;
+    }
+    50% {
+        -webkit-stroke-dasharray: 200 0;
+        -webkit-stroke-dashoffset: -146;
+        stroke-dasharray: 200 0;
+        stroke-dashoffset: -146;
+    }
+    to {
+        -webkit-stroke-dasharray: 0 200;
+        -webkit-stroke-dashoffset: -346;
+        stroke-dasharray: 0 200;
+        stroke-dashoffset: -346;
+    }
+}
+
+/* DEBUG */
+
+.panel_debug {
+    position: relative;
+    z-index: 2;
+    white-space: nowrap;
+    visibility: hidden;
+}
+
+#fps_container, #ms_container {
+    width: 1px;
+}
+
+.value_caption {
+    text-align: right;
+    width: 1px;
+}
+
+.value_sign {
+    max-width: 1px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* DEBUG BUTTONS */
+
+#buttons_container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+
+    white-space: nowrap;
+    text-align: center;
+    border-spacing: 6px;
+}
+
+.debug_button {
+    padding: 3px;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: #0d0;
+    border-radius: 4px;
+
+    cursor: pointer;
+    background-color: #353;
+    opacity: 0.6;
+}
+
+.debug_button:hover {
+    opacity: 0.9;
+}
+
+.debug_button:active {
+    opacity: 0.6;
+}
+
+/* BUTTONS CLASSES */
+
+.button {
+    width: 44px;
+    height: 44px;
+
+    margin: 8px;
+    position: absolute;
+    z-index: 2;
+
+    opacity: 0.5;
+    border-radius: 4px;
+
+    background-color: gray;
+    background-position: center;
+    background-size: 63%;
+    background-repeat: no-repeat;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.enable {
+    cursor: pointer;
+}
+
+.enable:hover {
+    opacity: 0.9;
+    background-size: 65%;
+}
+
+.enable:active {
+    background-size: 63%;
+}
+
+/* THE BUTTONS */
+
+#btn_full_screen {
+    top: 0;
+    right: 0;
+    background-image: url(images/btn_fullscreen.svg);
+}
+
+/* ERROR PAGE */
+
+#error_table {
+    width: 100%;
+    text-align: center;
+}

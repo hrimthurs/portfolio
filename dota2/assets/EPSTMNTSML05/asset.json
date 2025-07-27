@@ -1,0 +1,16 @@
+{
+	"name": "Postament Small",
+	"type": "ENVIRON",
+	"edition": 2,
+	"enable": true,
+	"build": {
+		"attachTextures": true
+	},
+	"meshes": {
+		"castShadow": false
+	},
+	"materials": {
+		"type": "lambert",
+		"color": 0.5
+	}
+}

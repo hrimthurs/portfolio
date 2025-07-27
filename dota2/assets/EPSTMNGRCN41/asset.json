@@ -1,0 +1,26 @@
+{
+	"name": "Postament Windranger Arcana",
+	"type": "ENVIRON",
+	"edition": 3,
+	"enable": true,
+	"build": {
+		"attachTextures": true
+	},
+	"meshes": {
+		"castShadow": false
+	},
+	"materials": [
+		{
+			"specPower": 0.01,
+			"alphaTest": 0.3,
+			"side": 2
+		},
+		{
+			"name": ["land_material", "stones_material"],
+			"type": "lambert",
+			"alphaTest": 0,
+			"transparent": true,
+			"color": 0.07
+		}
+	]
+}

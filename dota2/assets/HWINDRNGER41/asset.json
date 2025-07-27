@@ -1,0 +1,47 @@
+{
+	"name": "Windranger",
+	"type": "HERO",
+	"edition": 3,
+	"enable": true,
+	"meshes": {
+		"name": "windranger_back_mesh",
+		"receiveShadow": false
+	},
+	"materials": [
+		{
+			"name": "windrunner_base_material",
+			"specPower": 0.05
+		},
+		{
+			"name": "bow_string_material",
+			"type": "lambert",
+			"color": 0.4,
+			"opacity": 0.5
+		}
+	],
+	"observer": {
+		"position": {
+			"x": -220,
+			"y": 80,
+			"z": 470
+		},
+		"target": {
+			"y": 75
+		},
+		"distance": {
+			"max": 650
+		}
+	},
+	"preload": "EPSTMNTSML05",
+	"animation": {
+		"autorun": "idle_anim_ti8_loadout",
+		"list": ["idle_anim_ti8_loadout"]
+	},
+	"slots": {
+		"weapon": ["windranger_weapon_mesh", "bow_string_mesh"],
+		"head": "windranger_head_mesh",
+		"back": "windranger_back_mesh",
+		"shoulder": "windranger_shoulders_mesh",
+		"offhand_weapon": "windranger_weapon_offhand_mesh"
+	}
+}

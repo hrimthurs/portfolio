@@ -1,0 +1,13 @@
+{
+	"name": "Compass of the Rising Gale Bundle",
+	"type": "KIT",
+	"edition": 1,
+	"enable": true,
+	"bundle": [
+		"ICMPSRSNGL24",
+		"ILNGBWSNGL24",
+		"IARMRSNGLE24",
+		"ICAPRSNGLE24",
+		"IQUVRSNGLE24"
+	]
+}

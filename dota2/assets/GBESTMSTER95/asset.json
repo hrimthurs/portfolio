@@ -1,0 +1,56 @@
+{
+	"name": "Beastmaster",
+	"type": "GANG",
+	"edition": 1,
+	"enable": true,
+	"observer": {
+		"position": {
+			"x": -370,
+			"y": 90,
+			"z": 800
+		},
+		"target": {
+			"y": 120
+		},
+		"distance": {
+			"min": 450,
+			"max": 1100
+		}
+	},
+	"preload": "EPOSTMNTMD24",
+	"bundle": [
+		{
+			"assetId": "HBESTMSTER36",
+			"transform": {
+				"translate": {
+					"x": 20,
+					"z": -60
+				},
+				"scale": 0.9
+			}
+		},
+		{
+			"assetId": "SBSTMSRBRD99",
+			"transform": {
+				"translate": {
+					"x": 110,
+					"y": 110,
+					"z": -70
+				},
+				"rotate": {
+					"y": -45
+				}
+			}
+		},
+		{
+			"assetId": "SBSTMSRBST04",
+			"transform": {
+				"translate": {
+					"x": -65,
+					"z": 50
+				},
+				"scale": 0.5
+			}
+		}
+	]
+}

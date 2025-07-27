@@ -1,0 +1,11 @@
+{
+	"name": "Legacy of a Lost Age - Belt",
+	"type": "ITEM",
+	"edition": 1,
+	"enable": true,
+	"kit": "KLEGCLSTGE59",
+	"target": {
+		"assetId": "HBESTMSTER36",
+		"slot": "belt"
+	}
+}

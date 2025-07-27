@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DotaViewer</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+		<div id="wrapper_render">
+			<div id="render_contain">
+
+                <embed id="loader" type="image/svg+xml" src="images/loader.svg"></embed>
+                <div id="btn_full_screen" class="button invisible"></div>
+
+                <table id="error_table"><tbody></tbody></table>
+
+                <div style="position: absolute">
+                    <div id="stats_container" class="panel_debug">
+                        <table>
+                            <tr>
+                                <td colspan="3" style="font-weight: 900;"> <div id="engine_title"></div> </td>
+                                <td rowspan="2"> <table id="inf_container"><tbody></tbody></table> </td>
+                            </tr>
+
+                            <tr>
+                                <td> <table id="fps_container"><tbody></tbody></table> </td>
+                                <td> <table id="ms_container"><tbody></tbody></table> </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div id="values_container" class="panel_debug">
+                        <table style="width:100%"><tbody></tbody></table>
+                    </div>
+                </div>
+
+                <table id="buttons_container"><tbody></tbody></table>
+
+                <template id="error_template">
+                    <tr><td></td></tr>
+                </template>
+
+                <template id="debug_stats">
+                    <tr><td></td><td></td></tr>
+                </template>
+
+                <template id="debug_values">
+                    <tr><td class="value_caption"></td><td class="value_sign"></td></tr>
+                </template>
+
+            </div>
+		</div>
+
+        <script src="build.js"></script>
+
+        <script>
+            // use receive messages:
+            // window.addEventListener('message', event => {
+            //     if (event.data?.type === 'visibleAssets') console.log('visibleAssets:', event.data.list)
+            // }, false)
+        </script>
+
+    </body>
+
+</html>

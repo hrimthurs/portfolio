@@ -1,0 +1,21 @@
+{
+	"name": "Legacy of a Lost Age - Pterohawk",
+	"type": "SLAVE",
+	"edition": 2,
+	"enable": true,
+	"dummySlot": "ability2",
+	"materials": {
+		"specPower": 0.05
+	},
+	"transform": {
+		"rotate": {
+			"y": -20
+		}
+	},
+	"kit": "KLEGCLSTGE59",
+	"preload": "EPSTMNTSML05",
+	"animation": {
+		"autorun": "bird_idle_DMX",
+		"list": ["bird_idle_DMX"]
+	}
+}

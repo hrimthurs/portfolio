@@ -1,0 +1,15 @@
+{
+	"name": "Legacy of a Lost Age",
+	"type": "KIT",
+	"edition": 1,
+	"enable": true,
+	"bundle": [
+		"ILGCLSGRMR26",
+		"ILGCLSRCRS47",
+		"ILGCLSGHLM90",
+		"ILEGCLSTGX06",
+		"ILGCLSGBLT67",
+		"SLGCLSRHWK09",
+		"SLGCLSTGBR70"
+	]
+}

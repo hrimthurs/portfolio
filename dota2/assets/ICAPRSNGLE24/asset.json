@@ -1,0 +1,22 @@
+{
+	"name": "Cape of the Rising Gale",
+	"type": "ITEM",
+	"edition": 2,
+	"enable": true,
+	"materials": {
+		"specPower": 0.02
+	},
+	"kit": "KCMPSRSNGL24",
+	"target": {
+		"assetId": [
+			"HCMPSRCRPS25",
+			"HCMPSRCRPS35",
+			"HWINDRNGER41"
+		],
+		"slot": "back"
+	},
+	"arcana": {
+		"main": false,
+		"base": "HWINDRNGER41"
+	}
+}

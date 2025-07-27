@@ -1,0 +1,38 @@
+{
+	"name": "Beastmaster",
+	"type": "HERO",
+	"edition": 3,
+	"enable": true,
+	"materials": {
+		"specPower": 0.3
+	},
+	"transform": {
+		"scale": 1.1
+	},
+	"observer": {
+		"position": {
+			"x": -370,
+			"y": 90,
+			"z": 800
+		},
+		"target": {
+			"y": 120
+		},
+		"distance": {
+			"min": 450,
+			"max": 1100
+		}
+	},
+	"preload": "EPOSTMNTMD24",
+	"animation": {
+		"autorun": "loadout",
+		"list": ["loadout"]
+	},
+	"slots": {
+		"weapon": "weapon_mesh",
+		"head": "head_mesh",
+		"shoulder": "shoulder_mesh",
+		"arms": "arms_mesh",
+		"belt": "belt_mesh"
+	}
+}

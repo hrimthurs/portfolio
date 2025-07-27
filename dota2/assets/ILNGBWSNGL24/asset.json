@@ -1,0 +1,31 @@
+{
+	"name": "Longbow of the Rising Gale",
+	"type": "ITEM",
+	"edition": 2,
+	"enable": true,
+	"materials": [
+		{
+			"name": "windranger_arcana_bow_material",
+			"specPower": 0.5
+		},
+		{
+			"name": "bow_string_material",
+			"type": "lambert",
+			"color": [0, 0.7, 0.7],
+			"opacity": 0.5
+		}
+	],
+	"kit": "KCMPSRSNGL24",
+	"target": {
+		"assetId": [
+			"HCMPSRCRPS25",
+			"HCMPSRCRPS35",
+			"HWINDRNGER41"
+		],
+		"slot": "weapon"
+	},
+	"arcana": {
+		"main": false,
+		"base": "HWINDRNGER41"
+	}
+}

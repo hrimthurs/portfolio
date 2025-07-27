@@ -1,0 +1,32 @@
+{
+	"name": "Viper",
+	"type": "HERO",
+	"edition": 2,
+	"enable": true,
+	"materials": {
+		"specPower": 0.1
+	},
+	"observer": {
+		"position": {
+			"x": -330,
+			"y": 150,
+			"z": 700
+		},
+		"target": {
+			"y": 190
+		},
+		"distance": {
+			"min": 400,
+			"max": 1000
+		}
+	},
+	"animation": {
+		"autorun": "idle_loadout",
+		"list": ["idle_loadout"]
+	},
+	"slots": {
+		"head": "head_mesh",
+		"back": "viper_back_mesh",
+		"tail": "tail_mesh"
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"name": "Quiver of the Rising Gale",
+	"type": "ITEM",
+	"edition": 2,
+	"enable": true,
+	"materials": {
+		"specPower": 0.02
+	},
+	"kit": "KCMPSRSNGL24",
+	"target": {
+		"assetId": [
+			"HCMPSRCRPS25",
+			"HCMPSRCRPS35",
+			"HWINDRNGER41"
+		],
+		"slot": "offhand_weapon"
+	},
+	"arcana": {
+		"main": false,
+		"base": "HWINDRNGER41"
+	}
+}

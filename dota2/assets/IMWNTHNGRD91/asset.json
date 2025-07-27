@@ -1,0 +1,14 @@
+{
+	"name": "Maw of the Netherswarm Vanguard",
+	"type": "ITEM",
+	"edition": 1,
+	"enable": true,
+	"materials": {
+		"specPower": 1
+	},
+	"kit": "KVNGRDSWRM07",
+	"target": {
+		"assetId": "HVIPER122896",
+		"slot": "head"
+	}
+}

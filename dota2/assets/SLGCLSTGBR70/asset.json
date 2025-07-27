@@ -1,0 +1,19 @@
+{
+	"name": "Legacy of a Lost Age - Stegaboar",
+	"type": "SLAVE",
+	"edition": 2,
+	"enable": true,
+	"dummySlot": "summon",
+	"transform": {
+		"scale": 0.6,
+		"rotate": {
+			"y": 20
+		}
+	},
+	"kit": "KLEGCLSTGE59",
+	"preload": "EPSTMNTSML05",
+	"animation": {
+		"autorun": "idle",
+		"list": ["idle"]
+	}
+}

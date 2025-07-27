@@ -1,0 +1,11 @@
+{
+	"name": "Vanguard of the Netherswarm",
+	"type": "KIT",
+	"edition": 1,
+	"enable": true,
+	"bundle": [
+		"IMWNTHNGRD91",
+		"IPLTNGNGRD97",
+		"ISTNGNGRD673"
+	]
+}

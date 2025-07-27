@@ -1,0 +1,20 @@
+{
+	"name": "Beastmaster's Hawk",
+	"type": "SLAVE",
+	"edition": 2,
+	"enable": true,
+	"dummySlot": "ability2",
+	"materials": {
+		"specPower": 0.5
+	},
+	"transform": {
+		"rotate": {
+			"y": -20
+		}
+	},
+	"preload": "EPSTMNTSML05",
+	"animation": {
+		"autorun": "bird_idle_DMX",
+		"list": ["bird_idle_DMX"]
+	}
+}

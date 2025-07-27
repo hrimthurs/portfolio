@@ -1,0 +1,21 @@
+{
+	"name": "Beastmaster's Boar",
+	"type": "SLAVE",
+	"edition": 2,
+	"enable": true,
+	"dummySlot": "summon",
+	"materials": {
+		"specPower": 0.1
+	},
+	"transform": {
+		"scale": 0.6,
+		"rotate": {
+			"y": 20
+		}
+	},
+	"preload": "EPSTMNTSML05",
+	"animation": {
+		"autorun": "beast_idle",
+		"list": ["beast_idle"]
+	}
+}

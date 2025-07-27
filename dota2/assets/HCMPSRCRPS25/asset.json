@@ -1,0 +1,44 @@
+{
+	"name": "Compass of the Rising Gale Corpus",
+	"type": "HERO",
+	"edition": 3,
+	"enable": true,
+	"materials": {
+		"specPower": 0.02
+	},
+	"observer": {
+		"position": {
+			"x": -220,
+			"y": 80,
+			"z": 470
+		},
+		"target": {
+			"y": 80
+		},
+		"distance": {
+			"max": 700
+		}
+	},
+	"preload": "EPSTMNGRCN41",
+	"animation": {
+		"autorun": "loadout",
+		"list": ["loadout"]
+	},
+	"slots": {
+		"head": {
+			"link": "ICMPSRSNGL24"
+		},
+		"weapon": {
+			"link": "ILNGBWSNGL24"
+		},
+		"back": {
+			"link": "ICAPRSNGLE24"
+		},
+		"shoulder": {
+			"link": "IARMRSNGLE24"
+		},
+		"offhand_weapon": {
+			"link": "IQUVRSNGLE24"
+		}
+	}
+}

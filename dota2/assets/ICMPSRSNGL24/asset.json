@@ -1,0 +1,18 @@
+{
+	"name": "Compass of the Rising Gale",
+	"type": "ITEM",
+	"edition": 2,
+	"enable": true,
+	"materials": {
+		"specPower": 0.02
+	},
+	"kit": "KCMPSRSNGL24",
+	"target": {
+		"assetId": "HCMPSRCRPS25",
+		"slot": "head"
+	},
+	"arcana": {
+		"main": true,
+		"base": "HWINDRNGER41"		
+	}
+}
