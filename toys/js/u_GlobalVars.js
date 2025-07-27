@@ -1,4 +1,4 @@
-var fnTotalCfg = '_total.set';
+var fnTotalCfg = './total.cfg';
 var fnModelCfg = '_model.set';
 var ModelsPath = 'models/';
 var ImagesPath = 'images/';
