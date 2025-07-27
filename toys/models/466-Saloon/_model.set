@@ -1,0 +1,33 @@
+// MODEL SETTINGS
+
+bgScene = { color:F4E8D3; useImg:off } 
+
+ALight = { color:0xcccccc; intensity:0.7 }
+
+Fog = { visible:on; color:bgc; near:500; far:700 }
+GroundGrid = { visible:on; size:1000; div:100; c_axis:7f7681; c_grid:7f7681 }
+
+ColorDefMat=887777
+
+FilesOBJinZIP=SaloonOBJ.zip
+
+LoadModel= { name:Saloon1; visible:on }			// <- base
+LoadModel= { name:Saloon2; visible:on }			// <- portal
+LoadModel= { name:Saloon3; visible:on; RAxe:RDoorAxe }	// <- right door
+LoadModel= { name:Saloon4; visible:on; RAxe:LDoorAxe }	// <- left door
+LoadModel= { name:Saloon5; visible:on }			// <- walls
+LoadModel= { name:Saloon6; visible:on }			// <- second floor
+LoadModel= { name:Saloon7; visible:on; RAxe:BarAxe }	// <- bar
+LoadModel= { name:Saloon8; visible:on; RAxe:WallAxe }	// <- back wall
+LoadModel= { name:Saloon9; visible:on; RAxe:RoofAxe }	// <- roof
+
+RAxe= { name:RDoorAxe; bX:43.63; bY:58.13; bZ:28; eX:43.63; eY:58.13; eZ:8; MinAng:-65; MaxAng:112 }
+RAxe= { name:LDoorAxe; bX:68.18; bY:33.59; bZ:28; eX:68.18; eY:33.59; eZ:8; MinAng:-105; MaxAng:70 }
+RAxe= { name:BarAxe; bX:68.85; bY:-58; bZ:79; eX:68.85; eY:-58; eZ:-7; MinAng:0; MaxAng:62 }
+RAxe= { name:WallAxe; bX:-98.37; bY:-58.56; bZ:111; eX:-98.37; eY:-58.56; eZ:-19; MinAng:-102; MaxAng:0 }
+RAxe= { name:RoofAxe; bX:-100.37; bY:63; bZ:92; eX:-100.37; eY:-69; eZ:92; MinAng:-118; MaxAng:0 }
+
+camPos = { x:279.25; y:192.36; z:83.89 }
+camLookAt = { z:50 }
+ctrlSettings = { zoom:on; rotate:on; pan:off; minDist:230; maxDist:470; minPolarAng:0.2; maxPolarAng:1.5; minAzAng:; maxAzAng: }
+anmAuto = { quiet:300; rotH:3; rotV:; rotRev:off }

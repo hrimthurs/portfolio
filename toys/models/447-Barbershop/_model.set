@@ -1,0 +1,33 @@
+// MODEL SETTINGS
+
+bgScene = { color:F4E8D3; useImg:off } 
+
+ALight = { color:0xcccccc; intensity:0.7 }
+
+Fog = { visible:on; color:bgc; near:450; far:650 }
+GroundGrid = { visible:on; size:1000; div:100; c_axis:7f7681; c_grid:7f7681 }
+
+ColorDefMat=887777
+
+FilesOBJinZIP=BarbershopOBJ.zip
+
+LoadModel= { name:Barbershop1; visible:on; }			// <- base
+LoadModel= { name:Barbershop2; visible:on; }			// <- front wall
+LoadModel= { name:Barbershop3; visible:on; RAxe:FDoorAxe }	// <- front door
+LoadModel= { name:Barbershop4; visible:on; RAxe:LSegAxe }	// <- left wall
+LoadModel= { name:Barbershop5; visible:on; RAxe:LDoorAxe }	// <- left door
+LoadModel= { name:Barbershop6; visible:on }			// <- right wall
+LoadModel= { name:Barbershop7; visible:on; RAxe:CapAxe }	// <- cap
+LoadModel= { name:Barbershop8; visible:on }			// <- colonnade
+LoadModel= { name:Barbershop9; visible:on; RAxe:BSegAxe }	// <- back wall
+
+RAxe= { name:FDoorAxe; bX:35.6; bY:9.4; bZ:1; eX:35.6; eY:9.4; eZ:44; MinAng:-231; MaxAng:-120 }
+RAxe= { name:LSegAxe; bX:16.4; bY:-45.11; bZ:109; eX:16.4; eY:-45.11; eZ:-3; MinAng:0; MaxAng:49 }
+RAxe= { name:LDoorAxe; parent:LSegAxe; bX:-50.5; bY:-46.35; bZ:94; eX:-50.5; eY:-46.35; eZ:46; MinAng:-63; MaxAng:60 }
+RAxe= { name:CapAxe; bX:-41.9; bY:-50.79; bZ:92; eX:-41.9; eY:39.56; eZ:92; MinAng:-109; MaxAng:0 }
+RAxe= { name:BSegAxe; bX:-64.11; bY:35.15; bZ:101; eX:-64.11; eY:35.15; eZ:-3; MinAng:-80; MaxAng:0 }
+
+camPos = { x:271.16; y:135.74; z:139.62 }
+camLookAt = { z:40 }
+ctrlSettings = { zoom:on; rotate:on; pan:off; minDist:150; maxDist:400; minPolarAng:0.2; maxPolarAng:1.65 }
+anmAuto = { quiet:300; rotH:3; rotV:; rotRev:off }

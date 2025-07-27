@@ -1,0 +1,24 @@
+// MODEL SETTINGS
+
+bgScene = { color:D0EEF4; useImg:off } 
+
+ALight = { color:0xffffff; intensity:0.9 }
+
+Fog = { visible:on; color:bgc; near:450; far:650 }
+GroundGrid = { visible:on; size:1000; div:100; c_axis:90AEB4; c_grid:90AEB4 }
+
+ColorDefMat=887777
+
+FilesOBJinZIP=AuroraOBJ.zip
+
+LoadModel= { name:Aurora1; visible:on; }			// <- base
+LoadModel= { name:Aurora2; visible:on; }			// <- borts
+LoadModel= { name:Aurora3; visible:on; }			// <- paluba
+LoadModel= { name:Aurora4; visible:on; }			// <- tech
+LoadModel= { name:Aurora5; visible:on; }			// <- tech2
+LoadModel= { name:Aurora6; visible:on; }			// <- main
+
+camPos = { x:38; y:-181; z:105 }
+camLookAt = { z:0 }
+ctrlSettings = { zoom:on; rotate:on; pan:off; minDist:160; maxDist:340; minPolarAng:0.2; maxPolarAng:1.5 }
+anmAuto = { quiet:300; rotH:3; rotV:; rotRev:off }

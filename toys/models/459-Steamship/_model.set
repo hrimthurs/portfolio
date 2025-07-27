@@ -1,0 +1,45 @@
+// MODEL SETTINGS
+
+bgScene = { color:F4E8D3; useImg:off } 
+
+ALight = { color:0xcccccc; intensity:0.7 }
+DLight = { color:0xffffff; intensity:0.5; x:-30; y:30; z:200; shadow:on; sh_cam_top:150; sh_cam_right:150; sh_cam_left:-150; sh_cam_bottom:-150; sh_cam_near:1; sh_cam_far:500 }
+
+Fog = { visible:on; color:bgc; near:500; far:700 }
+Sea = { visible:on; z:5; wColor:0x001e0f; wnFile:waternormals.jpg; oceanSide:2000; size:0.9; distortionScale:4.7; alpha:1.0 }
+
+ColorDefMat=887777
+
+FilesOBJinZIP=SteamshipOBJ.zip
+
+LoadModel= { name:Steamship1; visible:on }			// <- bow
+LoadModel= { name:Steamship2; visible:on }			// <- stern
+LoadModel= { name:Steamship3; visible:on; RAxe:WheelAxe }	// <- wheel
+LoadModel= { name:Steamship4; visible:on; _RAxe:WheelAxe }	// <- wheel legs
+LoadModel= { name:Steamship5; visible:on }			// <- wheel forcer right
+LoadModel= { name:Steamship6; visible:on }			// <- wheel forcer left
+LoadModel= { name:Steamship7; visible:on }			// <- mid deck
+LoadModel= { name:Steamship8; visible:on; RAxe:DDoor1Axe }	// <- mid deck door1
+LoadModel= { name:Steamship9; visible:on; RAxe:DDoor2Axe }	// <- mid deck door2
+LoadModel= { name:Steamship10; visible:on; RAxe:DDoor3Axe }	// <- mid deck door3
+LoadModel= { name:Steamship11; visible:on; RAxe:DDoor4Axe }	// <- mid deck door4
+LoadModel= { name:Steamship12; visible:on; RAxe:WinchAxe }	// <- winch
+LoadModel= { name:Steamship13; visible:on }			// <- top deck
+LoadModel= { name:Steamship14; visible:on; RAxe:TDoorAxe }	// <- top deck door
+LoadModel= { name:Steamship15; visible:on }			// <- pipes/sticks
+LoadModel= { name:Steamship16; visible:on }			// <- rigging
+LoadModel= { name:Steamship17; visible:on }			// <- flags
+LoadModel= { name:Steamship18; visible:on }			// <- details
+
+RAxe= { name:WheelAxe; bX:-176.52; bY:40; bZ:31.94; eX:-176.52; eY:-40; eZ:31.94; MinAng:; MaxAng: }
+RAxe= { name:DDoor1Axe; bX:2.35; bY:-27.4; bZ:80; eX:2.35; eY:-27.4; eZ:60; MinAng:-18; MaxAng:17 }
+RAxe= { name:DDoor2Axe; bX:-32.84; bY:-27.4; bZ:80; eX:-32.84; eY:-27.4; eZ:60; MinAng:-16; MaxAng:19 }
+RAxe= { name:DDoor3Axe; bX:-32.84; bY:27.4; bZ:80; eX:-32.84; eY:27.4; eZ:60; MinAng:-18; MaxAng:17 }
+RAxe= { name:DDoor4Axe; bX:2.35; bY:27.4; bZ:80; eX:2.35; eY:27.4; eZ:60; MinAng:-17; MaxAng: 18 }
+RAxe= { name:WinchAxe; bX:131.75; bY:25; bZ:71.75; eX:131.75; eY:-25; eZ:71.75 }
+RAxe= { name:TDoorAxe; bX:-2.66; bY:11.42; bZ:133; eX:-2.66; eY:11.42; eZ:93; MinAng:-44; MaxAng:21 }
+
+camPos = { x:330.11; y:199.88; z:93.08 }
+camLookAt = { z:70 }
+ctrlSettings = { zoom:on; rotate:on; pan:off; minDist:265; maxDist:500; minPolarAng:0.2; maxPolarAng:1.65 }
+anmAuto = { quiet:300; rotH:3; rotV:; rotRev:off }

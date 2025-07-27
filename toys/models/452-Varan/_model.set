@@ -1,0 +1,58 @@
+// MODEL SETTINGS
+
+bgScene = { color:594d3e; useImg:off } 
+
+ALight = { color:0xcccccc; intensity:0.7 }
+
+Fog = { visible:on; color:bgc; near:400; far:550 }
+GroundGrid = { visible:on; size:1000; div:100; c_axis:887a82; c_grid:887a82 }
+
+ColorDefMat=887777
+
+FilesOBJinZIP=VaranOBJ.zip
+
+LoadModel= { name:Varan1; visible:on }				// <- legs base
+LoadModel= { name:Varan2; visible:on; RAxe:FRLegAxe }		// <- leg front right
+LoadModel= { name:Varan3; visible:on; RAxe:FLLegAxe }		// <- leg front left
+LoadModel= { name:Varan4; visible:on; RAxe:BRLegAxe }		// <- leg back right
+LoadModel= { name:Varan5; visible:on; RAxe:BLLegAxe }		// <- leg back left
+LoadModel= { name:Varan6; visible:on }				// <- corpus
+LoadModel= { name:Varan7; visible:on; RAxe:BCapAxe } 		// <- back cap
+LoadModel= { name:Varan8; visible:on; RAxe:TrapSeg1Axe }	// <- trap segment1
+LoadModel= { name:Varan9; visible:on; RAxe:TrapSeg2Axe }	// <- trap segment2
+LoadModel= { name:Varan10; visible:on; RAxe:FCapAxe }		// <- front cap
+LoadModel= { name:Varan11; visible:on; RAxe:FlapAxe }		// <- front flap
+LoadModel= { name:Varan12; visible:on; RAxe:HeadAxe }		// <- head corpus
+LoadModel= { name:Varan13; visible:on; RAxe:HeadAxe }		// <- head details
+LoadModel= { name:Varan14; visible:on; RAxe:KurokAxe }		// <- kurok
+LoadModel= { name:Varan15; visible:on; RAxe:HatchAxe }		// <- hatch
+LoadModel= { name:Varan16; visible:on; RAxe:HeadAxe }		// <- ammo cassets
+
+_LoadModel= { name:Varan4; visible:on }	// <- back trap + front cap
+_LoadModel= { name:Varan5; visible:on }	// <- head base
+_LoadModel= { name:Varan6; visible:on }	// <- head gun
+_LoadModel= { name:Varan7; visible:on }	// <- ammo cassets
+
+RAxe= { name:FRLegAxe; bX:39.7; bY:-17.44; bZ:34; eX:39.7; eY:-17.44; eZ:105; MinAng:-190; MaxAng:-132 }
+RAxe= { name:FLLegAxe; bX:39.7; bY:46.5; bZ:34; eX:39.7; eY:46.5; eZ:105; MinAng:-235; MaxAng:-180 }
+RAxe= { name:BRLegAxe; bX:-70.5; bY:-20.9; bZ:34; eX:-70.5; eY:-20.9; eZ:105; MinAng:-211; MaxAng:-163 }
+RAxe= { name:BLLegAxe; bX:-70.5; bY:50; bZ:34; eX:-70.5; eY:50; eZ:105; MinAng:-188; MaxAng:-133 }
+RAxe= { name:BCapAxe; bX:-81.5; bY:55; bZ:106; eX:-81.5; eY:-26; eZ:106; MinAng:0; MaxAng:26 }
+RAxe= { name:TrapSeg1Axe; bX:-101.7; bY:55; bZ:59.3; eX:-101.7; eY:-26; eZ:59.3; MinAng:-130; MaxAng:0 }
+RAxe= { name:TrapSeg2Axe; parent:TrapSeg1Axe; bX:-101.7; bY:55; bZ:101.3; eX:-101.7; eY:-26; eZ:101.3; MinAng:0; MaxAng:178 }
+RAxe= { name:FCapAxe; bX:29.7; bY:40.65; bZ:106.3; eX:29.7; eY:-11.5; eZ:106.3; MinAng:-30; MaxAng:0 }
+RAxe= { name:FlapAxe; bX:53.7; bY:33; bZ:89.1; eX:53.7; eY:-3.7; eZ:89.1; MinAng:0; MaxAng:134 }
+RAxe= { name:HeadAxe; bX:-15.4; bY:14.5; bZ:174; eX:-15.4; eY:14.5; eZ:83 }
+RAxe= { name:KurokAxe; parent:HeadAxe; bX:-29.3; bY:-5.26; bZ:137; eX:-29.3; eY:-5.26; eZ:117; MinAng:-80; MaxAng:0 }
+RAxe= { name:HatchAxe; parent:HeadAxe; bX:2.54; bY:14.6; bZ:148.45; eX:8.8; eY:-9.94; eZ:148.45; MinAng:-90; MaxAng:0 }
+
+_RAxe= { name:; parent:; bX:; bY:; bZ:; eX:; eY:; eZ:; MinAng:; MaxAng: }
+
+DefaultSubScene=
+_SubScene= { name:Full; obj:Varan1,Varan2,Varan3,Varan4,Varan5,Varan6,Varan7 }
+_SubScene= { name:NoAmmo; obj:Varan1,Varan2,Varan3,Varan4,Varan5,Varan6 }
+
+camPos = { x:234; y:-107; z:182 }
+camLookAt = { z:50 }
+ctrlSettings = { zoom:on; rotate:on; pan:off; minDist:230; maxDist:420; minPolarAng:0.2; maxPolarAng:1.5 }
+anmAuto = { quiet:300; rotH:5; rotV:0; rotRev:off }

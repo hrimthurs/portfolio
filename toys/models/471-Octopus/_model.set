@@ -1,0 +1,25 @@
+// MODEL SETTINGS
+
+bgScene = { color:594d3e; useImg:off } 
+
+ALight = { color:0xcccccc; intensity:0.9 }
+
+Fog = { visible:on; color:bgc; near:400; far:550 }
+GroundGrid = { visible:on; size:1000; div:100; c_axis:887a82; c_grid:887a82 }
+
+ColorDefMat=887777
+
+FilesOBJinZIP=OctopusOBJ.zip
+
+LoadModel= { name:Oct1; visible:on }	// <- base
+LoadModel= { name:Oct2; visible:on }	// <- cabin
+LoadModel= { name:Oct3; visible:on }	// <- glass
+LoadModel= { name:Oct4; visible:on }	// <- right legs
+LoadModel= { name:Oct5; visible:on }	// <- left legs
+LoadModel= { name:Oct6; visible:on }	// <- right legs
+LoadModel= { name:Oct7; visible:on }	// <- crane
+
+camPos = { x:234.6; y:-126.63; z:140.85 }
+camLookAt = { z:50 }
+ctrlSettings = { zoom:on; rotate:on; pan:off; minDist:200; maxDist:420; minPolarAng:0.2; maxPolarAng:1.5 }
+anmAuto = { quiet:300; rotH:5; rotV:0; rotRev:off }

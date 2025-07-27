@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title> Viewer </title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link rel="stylesheet" type="text/css" href="styles_fnt.css">
+
+		<script src="js/u_GlobalVars.js"></script>
+		<script src="js/u_ServicePrc.js"></script>
+		<script src="js/u_CfgPrc.js"></script>
+		<script src="js/u_DebugModePrc.js"></script>
+		<script src="js/u_MenuPrc.js"></script>
+		<script src="js/u_BGroundScenePrc.js"></script>
+
+		<script src="js/three.min.js"></script>
+		<script src="js/OrbitControls.js"></script>
+		<script src="js/SelectControls.js"></script>
+		<script src="js/DragControls.js"></script>
+		<script src="js/Detector.js"></script>
+		<script src="js/stats.min.js"></script>
+
+		<script src="js/FullScreen.js"></script>
+
+		<script src="js/MTLLoader.js"></script>
+		<script src="js/OBJLoader.js"></script>
+		<script src="js/u_Loaders.js"></script>
+
+		<script src="js/zip.js"></script>
+		<script src="js/deflate.js"></script>
+		<script src="js/inflate.js"></script>
+		<script src="js/ZIPLoader.js"></script>
+
+		<script src="js/Water.js"></script>
+
+	</head>
+
+	<body>
+		<div id="btn_full_screen" class="button enable"></div>
+
+		<div id='inf'> </div>
+
+		<div id='CurrSubScene' style='display:none'> </div>
+		<div id='ClickToURL'> </div>
+
+		<div id='cover_contain'>
+			<div id='cover'> </div>
+
+
+			<table id='notice_contain' border='0' cellpadding='0' cellspacing='0' align='center'>
+				<tr>
+					<td align='center'>
+						<div id='notice_img_contain'>
+							<div id='notice_img_cover'>
+								<div id='notice_img'> </div>
+							</div>
+						</div>
+
+						<div id='notice_delimiter'> </div>
+
+						<div id='notice_msg_cover'>
+							<div id='notice_msg'> </div>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<div id='menu_contain'>
+			<table id='menu' border='0' cellpadding='0' cellspacing='0'>
+				<tr> </tr>
+			</table>
+		</div>
+
+		<div id='dbgSelObj_contain'>
+			<table id='dbgSelObj' border='0' cellpadding='0' cellspacing='0'>
+				<tr> <td align='right'> Name </td> <td>&nbsp:&nbsp</td> <td id='dbgSelObj_Name'> </td> </tr>
+				<tr> <td>&nbsp</td> <td></td> <td></td> </tr>
+				<tr> <td align='right'> RAxe </td> <td>&nbsp:&nbsp</td> <td id='dbgSelObj_RAxe'> </td> </tr>
+				<tr> <td align='right'> RAng </td> <td>&nbsp:&nbsp</td> <td id='dbgSelObj_RAng'> </td> </tr>
+				<tr> <td align='right'> RMinAng </td> <td>&nbsp:&nbsp</td> <td id='dbgSelObj_RMinAng'> </td> </tr>
+				<tr> <td align='right'> RMaxAng </td> <td>&nbsp:&nbsp</td> <td id='dbgSelObj_RMaxAng'> </td> </tr>
+			</table>
+		</div>
+
+		<div id='dbgInf_contain'>
+			<table id='dbgInf' border='0' cellpadding='0' cellspacing='0'>
+				<tr> <td align='right'> camPosX </td> <td>&nbsp:&nbsp</td> <td id='dbgInf_camPosX'> </td> </tr>
+				<tr> <td align='right'> camPosY </td> <td>&nbsp:&nbsp</td> <td id='dbgInf_camPosY'> </td> </tr>
+				<tr> <td align='right'> camPosZ </td> <td>&nbsp:&nbsp</td> <td id='dbgInf_camPosZ'> </td> </tr>
+				<tr> <td align='right'> Distance </td> <td>&nbsp:&nbsp</td> <td id='dbgInf_distance'> </td> </tr>
+				<tr> <td align='right'> ctlAzimuth </td> <td>&nbsp:&nbsp</td> <td id='dbgInf_ctlAzimuth'> </td> </tr>
+				<tr> <td align='right'> ctlPolar </td> <td>&nbsp:&nbsp</td> <td id='dbgInf_ctlPolar'> </td> </tr>
+			</table>
+		</div>
+
+		<script>
+
+			Start();
+
+			var onProgress = function ( xhr )
+			{
+				if ( xhr.lengthComputable ) {
+					var percentComplete = xhr.loaded / xhr.total * 100;
+					//document.getElementById('inf').innerHTML = 'LOADING: ' + Math.round(percentComplete, 2) + '%';
+				}
+			};
+			var onError = function ( xhr ) { };
+
+			function CreateScene ()
+			{
+				container = document.createElement( 'div' );
+
+				renderer = webglAvailable() ? new THREE.WebGLRenderer() : new THREE.CanvasRenderer();
+//				renderer = new THREE.WebGLRenderer();
+
+				renderer.alpha = true;
+				renderer.shadowMap.enabled = true;
+				//renderer.shadowMap.type = THREE.PCFSoftShadowMap; // default THREE.PCFShadowMap
+				//renderer.shadowMapDarkness = 0.5;
+
+				container.appendChild( renderer.domElement );
+
+				scene = new THREE.Scene();
+
+				var aspect = window.innerWidth / window.innerHeight;
+				camera = new THREE.PerspectiveCamera( 45, aspect, 0.1, 2000 );
+				camera.up = new THREE.Vector3( 0, 0, 1 );
+				scene.add(camera);
+
+				/*
+/////////////////////////////////
+var sun= new THREE.Mesh( new THREE.SphereBufferGeometry( 10, 32, 32 ),new THREE.MeshStandardMaterial({color:0xFFD700}));
+sun.position.x=-300;
+sun.position.y=-150;
+sun.position.z=400;
+scene.add(sun);
+*/
+/*
+/////////////////////////////////
+var sphereGeometry = new THREE.SphereBufferGeometry( 30, 32, 32 );
+var sphereMaterial = new THREE.MeshStandardMaterial( { color: 0xff0000 } );
+var sphere = new THREE.Mesh( sphereGeometry, sphereMaterial );
+sphere.castShadow = true; //default is false
+sphere.receiveShadow = false; //default
+//sphere.position.set(50,150,30);
+sphere.position.x=-70;
+//scene.add( sphere );
+
+var planeGeometry = new THREE.PlaneBufferGeometry( 1000, 1000, 1000, 1000);
+var planeMaterial = new THREE.MeshStandardMaterial( { color: 0x00ff00 } )
+var plane = new THREE.Mesh( planeGeometry, planeMaterial );
+plane.receiveShadow = true;
+//scene.add( plane );
+
+var planeGeometry1 = new THREE.PlaneBufferGeometry( 100, 100, 100, 100);
+var planeMaterial1 = new THREE.MeshStandardMaterial( { color: 0x00ff00 } )
+var plane1 = new THREE.Mesh( planeGeometry1, planeMaterial1);
+plane1.castShadow = true; //default is false
+plane1.receiveShadow = false; //default
+plane1.rotation.y=Math.PI/2;
+plane1.position.x=-50;
+//scene.add( plane1 );
+
+/////////////////////////////////
+*/
+
+
+
+				controls = new THREE.OrbitControls( camera );
+				controls.target.set( 0, 0, 0 );
+				controls.update();
+
+				document.body.appendChild( container );
+
+				window.addEventListener('resize', onWindowResize, false);
+			}
+
+			function LoadingComplete()
+			{
+				CfgSetSubscene(CfgScene);
+				PrepareSceneOBJ();
+
+				SceneAnimate();
+
+				if (isDebugMode())
+				{
+					document.getElementById('dbgInf_contain').style.visibility='visible';
+					DbgInfUpdate();
+					DbgObjToScene();
+				}
+
+				document.getElementById('menu_contain').style.visibility='visible';
+				document.getElementById('cover_contain').style.display='none';
+				onWindowResize();
+
+//				setTimeout(function() {}, 2000);
+			}
+
+			function Start()
+			{
+				CreateScene();
+
+				if (renderer == undefined)
+				{
+					OutError('This browser not support WebGL');
+				} else
+				{
+					model=UrlGetValue('model');
+					var PathModel = ModelsPath+model+'/';
+
+					PrepareInterfaceLoading(PathModel);
+					CreateMenu();
+
+					if (model != undefined)
+					{
+
+						var TotalCfgLoader = new THREE.FileLoader();
+						TotalCfgLoader.load(fnTotalCfg, function ( text )
+						{
+							CfgTotal=INI.parse(text);
+
+							var ModelCfgLoader = new THREE.FileLoader();
+							ModelCfgLoader.setPath(PathModel);
+							ModelCfgLoader.load(fnModelCfg, function ( text )
+							{
+								CfgScene=INI.parse(text);
+
+								dbgDataLogConsole(CfgScene);
+
+								SetBGroundScene(model);
+								CfgSetCamPosition(CfgScene);
+								CfgSetAnmAutoRotate(CfgScene);
+								CfgSetControls(CfgScene);
+
+								CfgSceneSetAdditional(CfgScene,PathModel);
+
+								LoadSceneModels(PathModel, CfgGetVal_str(CfgScene,'FilesOBJinZIP',''), '#'+CfgGetVal_str(CfgScene,'ColorDefMat'), SceneOBJ, LoadingComplete);
+							});
+						});
+					}
+				}
+			}
+
+			function SceneAnimate()
+			{
+				controls.update();
+
+				SubSceneCheckChange();
+
+				requestAnimationFrame( SceneAnimate );
+
+				if (isDebugMode()) { DbgInfUpdate(); }
+
+				if (water != undefined)
+				{
+					var time = performance.now() * 0.001;
+					water.material.uniforms.time.value += 1.0 / 60.0;
+					water.material.uniforms.size.value = parameters.size;
+					water.material.uniforms.distortionScale.value = parameters.distortionScale;
+					water.material.uniforms.alpha.value = parameters.alpha;
+				}
+
+				if (stats != undefined) { stats.begin(); }
+				renderer.render( scene, camera );
+				if (stats != undefined) { stats.end(); }
+			}
+
+			function onWindowResize()
+			{
+				camera.aspect = window.innerWidth / window.innerHeight;
+				camera.updateProjectionMatrix();
+
+				renderer.setPixelRatio( window.devicePixelRatio );
+				renderer.setSize( window.innerWidth, window.innerHeight );
+
+				MenuResize();
+			}
+
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,31 @@
+// MODEL SETTINGS
+
+bgScene = { color:F4E8D3; useImg:off } 
+
+ALight = { color:0xcccccc; intensity:0.7 }
+
+Fog = { visible:on; color:bgc; near:550; far:700 }
+GroundGrid = { visible:on; size:1000; div:100; c_axis:7f7681; c_grid:7f7681 }
+
+ColorDefMat=887777
+
+FilesOBJinZIP=ChurchOBJ.zip
+
+LoadModel= { name:Church1; visible:on }			// <- portal
+LoadModel= { name:Church2; visible:on; RAxe:RDoorAxe }	// <- door right
+LoadModel= { name:Church3; visible:on; RAxe:LDoorAxe }	// <- door left
+LoadModel= { name:Church4; visible:on; }		// <- tower
+LoadModel= { name:Church5; visible:on; RAxe:TWallAxe }	// <- tower wall
+LoadModel= { name:Church6; visible:on; RAxe:LSideAxe }	// <- left side
+LoadModel= { name:Church7; visible:on; RAxe:RSideAxe }	// <- right side
+
+RAxe= { name:RDoorAxe; bX:72.22; bY:17; bZ:7.47; eX:72.22; eY:17; eZ:49.63; MinAng:-180; MaxAng:-68 }
+RAxe= { name:LDoorAxe; bX:72.22; bY:-17; bZ:7.47; eX:72.22; eY:-17; eZ:49.63; MinAng:-292; MaxAng:-180 }
+RAxe= { name:TWallAxe; bX:36; bY:-24; bZ:3; eX:36; eY:-24; eZ:125; MinAng:-284; MaxAng:-180 }
+RAxe= { name:LSideAxe; bX:70; bY:-66.5; bZ:-11; eX:70; eY:-66.5; eZ:100; MinAng:-220; MaxAng:-180 }
+RAxe= { name:RSideAxe; bX:70; bY:66.5; bZ:-11; eX:70; eY:66.5; eZ:100; MinAng:-180; MaxAng:-140 }
+
+camPos = { x:406.9; y:-229.72; z:230.99 }
+camLookAt = { z:110 }
+ctrlSettings = { zoom:on; rotate:on; pan:off; minDist:209; maxDist:550; minPolarAng:0.2; maxPolarAng:1.66 }
+anmAuto = { quiet:300; rotH:3; rotV:; rotRev:off }

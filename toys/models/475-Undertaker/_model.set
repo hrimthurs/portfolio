@@ -1,0 +1,28 @@
+// MODEL SETTINGS
+
+bgScene = { color:F4E8D3; useImg:off } 
+
+ALight = { color:0xcccccc; intensity:0.7 }
+
+Fog = { visible:on; color:bgc; near:350; far:600 }
+GroundGrid = { visible:on; size:1000; div:100; c_axis:7f7681; c_grid:7f7681 }
+
+ColorDefMat=887777
+
+FilesOBJinZIP=UndertakerOBJ.zip
+
+LoadModel= { name:Undertaker1; visible:on; dside:off }	// <- house base
+LoadModel= { name:Undertaker2; visible:on; dside:off }	// <- house front door
+LoadModel= { name:Undertaker3; visible:on; dside:off }	// <- house back door
+LoadModel= { name:Undertaker4; visible:on; dside:off }	// <- house cap
+LoadModel= { name:Undertaker5; visible:on; dside:off }	// <- products
+LoadModel= { name:Undertaker6; visible:on; dside:off }	// <- graveyard base
+LoadModel= { name:Undertaker7; visible:on; dside:off }	// <- graveyard clients
+LoadModel= { name:Undertaker8; visible:on; dside:off }	// <- kortej
+
+_RAxe= { name:FDoorAxe; bX:35.6; bY:9.4; bZ:1; eX:35.6; eY:9.4; eZ:44; MinAng:-231; MaxAng:-120 }
+
+camPos = { x:252.18; y:-207.19; z:173 }
+camLookAt = { z:40 }
+ctrlSettings = { zoom:on; rotate:on; pan:off; minDist:230; maxDist:440; minPolarAng:0.2; maxPolarAng:1.65 }
+anmAuto = { quiet:300; rotH:3; rotV:; rotRev:off }

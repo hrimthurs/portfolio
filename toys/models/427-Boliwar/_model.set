@@ -1,0 +1,29 @@
+// MODEL SETTINGS
+
+bgScene = { color:445864; useImg:off } 
+
+ALight = { color:0xcccccc; intensity:0.7 }
+
+Fog = { visible:on; color:bgc; near:200; far:550 }
+GroundGrid = { visible:on; size:1000; div:100; c_axis:7f7681; c_grid:7f7681 }
+
+ColorDefMat=887777
+
+FilesOBJinZIP=BoliwarOBJ.zip
+
+LoadModel= { name:Boliwar1; visible:on }		// <- corpus
+LoadModel= { name:Boliwar2; visible:on }		// <- cabin glasses
+LoadModel= { name:Boliwar3; visible:on; RAxe:CCapAxe }	// <- cabin cap
+LoadModel= { name:Boliwar4; visible:on; RAxe:TrapAxe }	// <- trap
+LoadModel= { name:Boliwar5; visible:on }		// <- tracks
+LoadModel= { name:Boliwar6; visible:on }		// <- wheels
+LoadModel= { name:Boliwar7; visible:on }		// <- wheel details
+
+RAxe= { name:CCapAxe; bX:21.84; bY:-6; bZ:55.5; eX:21.84; eY:6; eZ:55.5; MinAng:-130; MaxAng:0 }
+RAxe= { name:TrapAxe; bX:-53; bY:-18; bZ:13.75; eX:-53; eY:18; eZ:13.75; MinAng:0; MaxAng:92 }
+
+
+camPos = { x:112; y:-116; z:118 }
+camLookAt = { z:30 }
+ctrlSettings = { zoom:on; rotate:on; pan:off; minDist:120; maxDist:300; minPolarAng:0.4; maxPolarAng:1.5 }
+anmAuto = { quiet:300; rotH:5; rotV:0; rotRev:off }

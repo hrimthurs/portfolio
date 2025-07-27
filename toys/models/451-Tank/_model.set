@@ -1,0 +1,54 @@
+// MODEL SETTINGS
+
+bgScene = { color:445864; useImg:off } 
+
+ALight = { color:0xcccccc; intensity:0.7 }
+
+Fog = { visible:on; color:bgc; near:350; far:550 }
+GroundGrid = { visible:on; size:1000; div:100; c_axis:7f7681; c_grid:7f7681 }
+
+ColorDefMat=887777
+
+FilesOBJinZIP=LeviathanOBJ.zip
+
+
+LoadModel= { name:Leviathan1; visible:on }			// <- tracks
+LoadModel= { name:Leviathan2; visible:on }			// <- corpus
+LoadModel= { name:Leviathan3; visible:on }			// <- corpus inner
+LoadModel= { name:Leviathan4; visible:on; RAxe:FCapAxe }	// <- cap front
+LoadModel= { name:Leviathan5; visible:on; RAxe:FlapAxe }	// <- flap front
+LoadModel= { name:Leviathan6; visible:on; RAxe:BCapAxe }	// <- cap back
+LoadModel= { name:Leviathan7; visible:on; RAxe:TrapAxe }	// <- trap back
+LoadModel= { name:Leviathan8; visible:on }			// <- head base
+LoadModel= { name:Leviathan9; visible:on; RAxe:HeadAxe }	// <- head corpus
+LoadModel= { name:Leviathan10; visible:on; RAxe:HeadAxe }	// <- head gun
+LoadModel= { name:Leviathan11; visible:on; RAxe:KurokAxe }	// <- head gun kurok
+LoadModel= { name:Leviathan12; visible:on; RAxe:HeadAxe }	// <- head cap
+LoadModel= { name:Leviathan13; visible:on; RAxe:HatchAxe }	// <- head hatch
+LoadModel= { name:Leviathan14; visible:on; RAxe:BullCapAxe }	// <- head bullet cap
+LoadModel= { name:Leviathan15; visible:on }			// <- crane base
+LoadModel= { name:Leviathan16; visible:on; RAxe: CrBCapAxe }	// <- crane cap back
+LoadModel= { name:Leviathan17; visible:on; RAxe: CrFCapAxe }	// <- crane cap front
+LoadModel= { name:Leviathan18; visible:on; RAxe: CraneAxe }	// <- crane 
+
+
+RAxe= { name:FCapAxe;  bX:43.844; bY:29.38; bZ:67.78; eX:43.844; eY:-29.38; eZ:67.78; MinAng:-44; MaxAng:0 }
+RAxe= { name:FlapAxe;  bX:71; bY:20; bZ:57.6; eX:71; eY:-20; eZ:57.6; MinAng:0; MaxAng:130 }
+RAxe= { name:BCapAxe;  bX:-71.86; bY:28.74; bZ:70.9; eX:-71.86; eY:-28.74; eZ:70.9; MinAng:0; MaxAng:44 }
+RAxe= { name:TrapAxe;  bX:-79.86; bY:28.85; bZ:29.2; eX:-79.86; eY:-28.85; eZ:29.2; MinAng:-100; MaxAng:0 }
+RAxe= { name:HeadAxe;  bX:-7; bY:1.13; bZ:132; eX:-7; eY:1.13; eZ:41; MinAng:; MaxAng: }
+RAxe= { name:KurokAxe; parent:HeadAxe; bX:-20.8; bY:-31; bZ:100; eX:-20.8; eY:-31; eZ:42; MinAng:-73; MaxAng:0 }
+RAxe= { name:HatchAxe; parent:HeadAxe; bX:-29.6; bY:1.99; bZ:108.6; eX:-29.6; eY:44.6; eZ:108.6; MinAng:0; MaxAng:130 }
+RAxe= { name:BullCapAxe; parent:HeadAxe; bX:7.52; bY:-22; bZ:106.86; eX:7.52; eY:15; eZ:106.86; MinAng:-145; MaxAng:0 }
+RAxe= { name:CrBCapAxe; bX:-27.3; bY:43; bZ:74; eX:-27.3; eY:-43; eZ:74; MinAng:-150; MaxAng:0 }
+RAxe= { name:CrFCapAxe; bX:14.16; bY:-12; bZ:74; eX:14.16; eY:43; eZ:74; MinAng:-150; MaxAng:0 }
+RAxe= { name:CraneAxe; bX:10.78; bY:-19.6; bZ:40; eX:10.78; eY:-19.6; eZ:93 }
+
+DefaultSubScene=Battle
+SubScene= { name:Battle; obj:Leviathan1,Leviathan2,Leviathan3,Leviathan4,Leviathan5,Leviathan6,Leviathan7,Leviathan8,Leviathan9,Leviathan10,Leviathan11,Leviathan12,Leviathan13,Leviathan14 }
+SubScene= { name:Crane; obj:Leviathan1,Leviathan2,Leviathan3,Leviathan4,Leviathan5,Leviathan6,Leviathan7,Leviathan15,Leviathan16,Leviathan17,Leviathan18 }
+
+camPos = { x:203; y:133; z:132.9 }
+camLookAt = { z:40 }
+ctrlSettings = { zoom:on; rotate:on; pan:off; minDist:200; maxDist:425; minPolarAng:0.2; maxPolarAng:1.5; _minAzAng:0.5; _maxAzAng:2 }
+anmAuto = { quiet:300; rotH:5; rotV:0; rotRev:off }

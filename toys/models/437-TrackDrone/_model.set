@@ -1,0 +1,26 @@
+// MODEL SETTINGS
+
+bgScene = { color:445864; useImg:off } 
+
+ALight = { color:0xcccccc; intensity:0.7 }
+
+Fog = { visible:on; color:bgc; near:200; far:400 }
+GroundGrid = { visible:on; size:1000; div:100; c_axis:7f7681; c_grid:7f7681 }
+
+ColorDefMat=887777
+
+FilesOBJinZIP=TrackDroneOBJ.zip
+
+LoadModel= { name:TrackDrone1; visible:on }			// <- tracks
+LoadModel= { name:TrackDrone2; visible:on }			// <- corpus
+LoadModel= { name:TrackDrone3; visible:on; RAxe:TrailAxe }	// <- trailer
+LoadModel= { name:TrackDrone4; visible:on; RAxe:HeadAxe }	// <- head
+LoadModel= { name:TrackDrone5; visible:on; RAxe:HeadAxe }	// <- guns
+
+RAxe= { name:TrailAxe; bX:-38.2; bY:18; bZ:15.47; eX:-38.2; eY:-18; eZ:15.47; MinAng:0; MaxAng:41 }
+RAxe= { name:HeadAxe; bX:0; bY:0; bZ:0; eX:0; eY:0; eZ:72.45 }
+
+camPos = { x:117; y:-68; z:62 }
+camLookAt = { z:20 }
+ctrlSettings = { zoom:on; rotate:on; pan:off; minDist:110; maxDist:220; minPolarAng:0.2; maxPolarAng:1.5 }
+anmAuto = { quiet:300; rotH:5; rotRev:off }

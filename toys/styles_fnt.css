@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "smoked-mirror-fnt";
+  src:url("fonts/smoked-mirror-fnt.eot");
+  src:url("fonts/smoked-mirror-fnt.eot?#iefix") format("embedded-opentype"),
+    url("fonts/smoked-mirror-fnt.woff") format("woff"),
+    url("fonts/smoked-mirror-fnt.ttf") format("truetype"),
+    url("fonts/smoked-mirror-fnt.svg#smoked-mirror-fnt") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "smoked-mirror-fnt" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="sm-icon-"]:before,
+[class*=" sm-icon-"]:before {
+  font-family: "smoked-mirror-fnt" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sm-icon-file-text-o:before {
+  content: "\63";
+}
+.sm-icon-film:before {
+  content: "\62";
+}
+.sm-icon-youtube-play:before {
+  content: "\67";
+}
+.sm-icon-android-expand:before {
+  content: "\68";
+}
+.sm-icon-android-contract:before {
+  content: "\69";
+}
+.sm-icon-android-open:before {
+  content: "\6a";
+}
+.sm-icon-help:before {
+  content: "\6b";
+}
+.sm-icon-image:before {
+  content: "\6c";
+}
+.sm-icon-location:before {
+  content: "\6d";
+}
+.sm-icon-youtube-play-outline:before {
+  content: "\6e";
+}
+.sm-icon-widget:before {
+  content: "\72";
+}
+.sm-icon-filmstrip:before {
+  content: "\74";
+}
+.sm-icon-question-1:before {
+  content: "\76";
+}
+.sm-icon-pause-1:before {
+  content: "\77";
+}
+.sm-icon-arrow-right-bold:before {
+  content: "\78";
+}
+.sm-icon-arrow-oblique-expand-directions:before {
+  content: "\79";
+}
+.sm-icon-arrow-oblique-contract-directions:before {
+  content: "\7a";
+}
+.sm-icon-question-2:before {
+  content: "\43";
+}
+.sm-icon-camera:before {
+  content: "\45";
+}
+.sm-icon-block-menu:before {
+  content: "\46";
+}
+.sm-icon-information-circle:before {
+  content: "\61";
+}
+.sm-icon-information-white:before {
+  content: "\64";
+}
+.sm-icon-info:before {
+  content: "\65";
+}
+.sm-icon-info-1:before {
+  content: "\66";
+}
+.sm-icon-eye-1:before {
+  content: "\71";
+}
+.sm-icon-arrows-ccw:before {
+  content: "\70";
+}

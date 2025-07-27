@@ -1,0 +1,29 @@
+// MODEL SETTINGS
+
+bgScene = { color:F4E8D3; useImg:off } 
+
+ALight = { color:0xcccccc; intensity:0.7 }
+
+Fog = { visible:on; color:bgc; near:350; far:600 }
+GroundGrid = { visible:on; size:1000; div:100; c_axis:7f7681; c_grid:7f7681 }
+
+ColorDefMat=887777
+
+FilesOBJinZIP=StorageOBJ.zip
+
+LoadModel= { name:Storage1; visible:on; dside:off }	// <- base
+LoadModel= { name:Storage2; visible:on; dside:off }	// <- walls
+LoadModel= { name:Storage3; visible:on; dside:off }	// <- cap left
+LoadModel= { name:Storage4; visible:on; dside:off }	// <- cap right
+LoadModel= { name:Storage5; visible:on; dside:off }	// <- door left
+LoadModel= { name:Storage6; visible:on; dside:off }	// <- door right
+LoadModel= { name:Storage7; visible:on; dside:off }	// <- doski
+LoadModel= { name:Storage8; visible:on; dside:off }	// <- pristroika right
+LoadModel= { name:Storage9; visible:on; dside:off }	// <- telega
+
+_RAxe= { name:FDoorAxe; bX:35.6; bY:9.4; bZ:1; eX:35.6; eY:9.4; eZ:44; MinAng:-231; MaxAng:-120 }
+
+camPos = { x:254.83; y:-111; z:158.58 }
+camLookAt = { z:40 }
+ctrlSettings = { zoom:on; rotate:on; pan:off; minDist:150; maxDist:400; minPolarAng:0.2; maxPolarAng:1.65 }
+anmAuto = { quiet:300; rotH:3; rotV:; rotRev:off }

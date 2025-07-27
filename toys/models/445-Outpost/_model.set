@@ -1,0 +1,28 @@
+// MODEL SETTINGS
+
+bgScene = { color:F4E8D3; useImg:off } 
+
+ALight = { color:0xcccccc; intensity:0.7 }
+
+Fog = { visible:on; color:bgc; near:450; far:650 }
+GroundGrid = { visible:on; size:1000; div:100; c_axis:7f7681; c_grid:7f7681 }
+
+ColorDefMat=887777
+
+FilesOBJinZIP=OutpostOBJ.zip
+
+LoadModel= { name:Outpost1; visible:on }		// <- base
+LoadModel= { name:Outpost2; visible:on }		// <- front segment
+LoadModel= { name:Outpost3; visible:on; RAxe:FDoorAxe }	// <- front door
+LoadModel= { name:Outpost4; visible:on }		// <- right segment
+LoadModel= { name:Outpost5; visible:on; RAxe:RDoorAxe }	// <- right door
+LoadModel= { name:Outpost6; visible:on; RAxe:LSegAxe }	// <- left segment
+
+RAxe= { name:FDoorAxe; bX:51.73; bY:25.75; bZ:50; eX:51.73; eY:25.75; eZ:0; MinAng:-67; MaxAng:46 }
+RAxe= { name:RDoorAxe; bX:-64; bY:40.75; bZ:45; eX:-64; eY:40.75; eZ:3; MinAng:-56; MaxAng:53 }
+RAxe= { name:LSegAxe; bX:12; bY:-40.75; bZ:111; eX:12; eY:-40.75; eZ:-11; MinAng:0; MaxAng:109 }
+
+camPos = { x:184.32; y:-219.17; z:156.82 }
+camLookAt = { z:40 }
+ctrlSettings = { zoom:on; rotate:on; pan:off; minDist:200; maxDist:400; minPolarAng:0.2; maxPolarAng:1.65 }
+anmAuto = { quiet:300; rotH:3; rotV:; rotRev:off }

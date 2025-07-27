@@ -1,0 +1,26 @@
+// MODEL SETTINGS
+
+bgScene = { color:F4E8D3; useImg:off } 
+
+ALight = { color:0xcccccc; intensity:0.7 }
+
+Fog = { visible:on; color:bgc; near:500; far:700 }
+GroundGrid = { visible:on; size:1000; div:100; c_axis:7f7681; c_grid:7f7681 }
+
+ColorDefMat=887777
+
+FilesOBJinZIP=WindpumpOBJ.zip
+
+LoadModel= { name:Windpump1; visible:on }			// <- barrel base
+LoadModel= { name:Windpump2; visible:on }			// <- barrel head
+LoadModel= { name:Windpump3; visible:on }			// <- windpump base
+LoadModel= { name:Windpump4; visible:on; RAxe:FlugerAxe }	// <- windpump fluger
+LoadModel= { name:Windpump5; visible:on; RAxe:PropAxe }		// <- windpump propeller
+
+RAxe= { name:FlugerAxe; bX:-42.7; bY:48.25; bZ:0; eX:-42.7; eY:48.25; eZ:190 }
+RAxe= { name:PropAxe; parent:FlugerAxe; bX:-11.4; bY:69.38; bZ:176.9; eX:-90.84; eY:15.6; eZ:176.9 }
+
+camPos = { x:290.22; y:-70.86; z:213.96 }
+camLookAt = { z:90 }
+ctrlSettings = { zoom:on; rotate:on; pan:off; minDist:200; maxDist:450; minPolarAng:0.2; maxPolarAng:1.5; minAzAng:; maxAzAng: }
+anmAuto = { quiet:300; rotH:3; rotV:; rotRev:off }

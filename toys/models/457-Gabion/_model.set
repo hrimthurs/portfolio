@@ -1,0 +1,28 @@
+// MODEL SETTINGS
+
+bgScene = { color:445864; useImg:off } 
+
+ALight = { color:0xcccccc; intensity:0.9 }
+
+Fog = { visible:on; color:bgc; near:350; far:550 }
+GroundGrid = { visible:on; size:1000; div:100; c_axis:7f7681; c_grid:7f7681 }
+
+ColorDefMat=887777
+
+FilesOBJinZIP=GabionOBJ.zip
+
+LoadModel= { name:Gabion1; visible:on }		// <- central
+LoadModel= { name:Gabion2; visible:on }		// <- left corner
+LoadModel= { name:Gabion3; visible:on }		// <- right corner
+LoadModel= { name:Gabion4; visible:on }		// <- gun base
+LoadModel= { name:Gabion5; visible:on }		// <- gun crane
+LoadModel= { name:Gabion6; visible:on }		// <- gun head
+LoadModel= { name:Gabion7; visible:on }		// <- wall left
+LoadModel= { name:Gabion8; visible:on }		// <- portal base
+LoadModel= { name:Gabion9; visible:on }		// <- portal main
+LoadModel= { name:Gabion10; visible:on }	// <- wall right
+
+camPos = { x:285; y:-130; z:240 }
+camLookAt = { z:40 }
+ctrlSettings = { zoom:on; rotate:on; pan:off; minDist:230; maxDist:430; minPolarAng:0.2; maxPolarAng:1.5; _minAzAng:0.5; _maxAzAng:2 }
+anmAuto = { quiet:300; rotH:5; rotV:0; rotRev:off }

@@ -1,0 +1,19 @@
+// MODEL SETTINGS
+
+bgScene = { color:D0EEF4; useImg:off } 
+
+ALight = { color:0xffffff; intensity:0.9 }
+
+Fog = { visible:on; color:bgc; near:450; far:650 }
+GroundGrid = { visible:on; size:1000; div:100; c_axis:90AEB4; c_grid:90AEB4 }
+
+ColorDefMat=887777
+
+FilesOBJinZIP=AlexTheatre.zip
+
+LoadModel= { name:AlexTheatre; visible:on; }			
+
+camPos = { x:162; y:-145; z:93 }
+camLookAt = { z:40 }
+ctrlSettings = { zoom:on; rotate:on; pan:off; minDist:150; maxDist:300; minPolarAng:0.2; maxPolarAng:1.7 }
+anmAuto = { quiet:300; rotH:3; rotV:; rotRev:off }

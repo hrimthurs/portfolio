@@ -1,0 +1,28 @@
+// MODEL SETTINGS
+
+bgScene = { color:445864; useImg:off} 
+
+ALight = { color:0xcccccc; intensity:0.7 }
+
+Fog = { visible:on; color:bgc; near:200; far:550 }
+GroundGrid = { visible:on; size:1000; div:100; c_axis:7f7681; c_grid:7f7681 }
+
+ColorDefMat=887777
+
+FilesOBJinZIP=FroggyOBJ.zip
+
+LoadModel= { name:Froggy1; visible:on }				// <- corpus
+LoadModel= { name:Froggy2; visible:on }				// <- main tracks
+LoadModel= { name:Froggy3; visible:on; RAxe:TrailAxe }		// <- trailer base
+LoadModel= { name:Froggy4; visible:on; RAxe:TrailAxe }		// <- trailer tracks
+LoadModel= { name:Froggy5; visible:on; RAxe:TrailAxe }		// <- trailer box
+LoadModel= { name:Froggy6; visible:on; RAxe:TrailCapAxe }	// <- trailer cap
+LoadModel= { name:Froggy7; visible:on }				// <- antenna
+
+RAxe= { name:TrailAxe; bX:1.35; bY:-3.6; bZ:6; eX:1.35; eY:-3.6; eZ:43; MinAng:-188; MaxAng:-150 }
+RAxe= { name:TrailCapAxe; parent:TrailAxe; bX:-65.57; bY:-53.45; bZ:31.57; eX:-79.4; eY:17.44; eZ:31.57; MinAng:90; MaxAng:250 }
+
+camPos = { x:130; y:-134; z:119 }
+camLookAt = { z:20 }
+ctrlSettings = { zoom:on; rotate:on; pan:off; minDist:140; maxDist:280; minPolarAng:0.2; maxPolarAng:1.5 }
+anmAuto = { quiet:300; rotH:5; rotV:; rotRev:off }

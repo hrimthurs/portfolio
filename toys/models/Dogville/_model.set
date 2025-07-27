@@ -1,0 +1,32 @@
+// MODEL SETTINGS
+
+bgScene = { color:F4E8D3; useImg:off } 
+
+ALight = { color:0xcccccc; intensity:0.7 }
+DLight = { color:0xffffff; intensity:0.5; x:-300; y:-150; z:400; shadow:on; sh_cam_top:600; sh_cam_right:600; sh_cam_left:-600; sh_cam_bottom:-600; sh_cam_near:1; sh_cam_far:1500 }
+
+Sea = { visible:on; z:-64; wColor:0x001e0f; wnFile:waternormals.jpg; oceanSide:2000; size:0.9; distortionScale:4.7; alpha:1.0 }
+Fog = { visible:on; color:bgc; near:1500; far:1900 }
+
+ColorDefMat=887777
+
+_FilesOBJinZIP=sOutpostOBJ.zip
+
+LoadModel= { path:Island; name:Island; visible:on; dside:off; shadowR:on }
+LoadModel= { path:sRoadsign; name:sRoadsign; visible:on; dside:on }			
+LoadModel= { path:sSettlers; name:settl; visible:on; dside:on; shadowC:on }			
+
+LoadModel= { path:sChurch; onclick:url>461-Church; name:sChurch; visible:on; dside:on }			
+LoadModel= { path:sUndert; onclick:url>475-Undertaker; name:undert; visible:on; dside:on; }			
+LoadModel= { path:sSklad; onclick:url>474-Storage; name:skl; visible:on; dside:on }			
+LoadModel= { path:sOutpost; onclick:url>445-Outpost; name:sOutpost; visible:on; dside:on }			
+LoadModel= { path:sBarbershop; onclick:url>447-Barbershop; name:sBarbershop; visible:on; dside:on }			
+LoadModel= { path:sBank; onclick:url>469-Bank; name:sBank; visible:on; dside:on }			
+LoadModel= { path:sSaloon; onclick:url>466-Saloon; name:sSaloon; visible:on; dside:on }			
+LoadModel= { path:sWindp; onclick:url>465-Windpump; name:wind; visible:on; dside:on; shadowC:on }			
+LoadModel= { path:sShip; onclick:url>459-Steamship; name:sShip; visible:on; dside:on }			
+
+camPos = { x:-718.58; y:-256.33; z:458.88 }
+camLookAt = { z:0 }
+ctrlSettings = { zoom:on; rotate:on; pan:off; minDist:500; maxDist:1000; minPolarAng:0.24; maxPolarAng:1.4; minAzAng:; maxAzAng: }
+anmAuto = { quiet:300; rotH:3; rotV:; rotRev:off }

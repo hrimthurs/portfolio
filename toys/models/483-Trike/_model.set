@@ -1,0 +1,26 @@
+// MODEL SETTINGS
+
+bgScene = { color:445864; useImg:off } 
+
+CamDLight = { color:0xaaaaaa; intensity:0.2; dist:10; x:0; y:0; z:0 }
+ALight = { color:0xcccccc; intensity:0.7 }
+
+Fog = { visible:on; color:bgc; near:200; far:550 }
+GroundGrid = { visible:on; size:1000; div:100; c_axis:7f7681; c_grid:7f7681 }
+
+ColorDefMat=887777
+
+FilesOBJinZIP=TrikeOBJ.zip
+
+LoadModel= { name:Trike1; visible:on }		// <- corpus
+LoadModel= { name:Trike2; visible:on }		// <- motor
+LoadModel= { name:Trike3; visible:on }		// <- head
+LoadModel= { name:Trike4; visible:on }		// <- back wheels
+LoadModel= { name:Trike5; visible:on }		// <- wings
+LoadModel= { name:Trike6; visible:on }		// <- gun left
+
+
+camPos = { x:123; y:-120; z:137 }
+camLookAt = { z:30 }
+ctrlSettings = { zoom:on; rotate:on; pan:off; minDist:143; maxDist:300; minPolarAng:0.4; maxPolarAng:1.5 }
+anmAuto = { quiet:300; rotH:5; rotV:0; rotRev:off }

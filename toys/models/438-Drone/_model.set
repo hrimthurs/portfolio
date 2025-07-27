@@ -1,0 +1,26 @@
+// MODEL SETTINGS
+
+bgScene = { color:594d3e; useImg:off } 
+
+ALight = { color:0xcccccc; intensity:0.7 }
+
+Fog = { visible:on; color:bgc; near:200; far:550 }
+GroundGrid = { visible:on; size:1000; div:100; c_axis:887a82; c_grid:887a82 }
+
+ColorDefMat=887777
+
+FilesOBJinZIP=DroneOBJ.zip
+
+LoadModel= { name:Drone1; visible:on }			// <- legs
+LoadModel= { name:Drone2; visible:on; RAxe:GBaseAxe }	// <- gun base
+LoadModel= { name:Drone3; visible:on; RAxe:GBaseSegAxe }// <- gun base segment
+LoadModel= { name:Drone4; visible:on; RAxe:GunAxe }	// <- gun
+
+RAxe= { name:GBaseAxe; bX:0; bY:0; bZ:85; eX:0; eY:0; eZ:20; }
+RAxe= { name:GBaseSegAxe; parent:GBaseAxe; bX:11.4; bY:12.5; bZ:68.3; eX:11.4; eY:-12.50; eZ:68.3; MinAng:-30; MaxAng:56 }
+RAxe= { name:GunAxe; parent:GBaseSegAxe; bX:-5.7; bY:-12; bZ:85; eX:-5.7; eY:12; eZ:85; MinAng:-26; MaxAng:12 }
+
+camPos = { x:125; y:-141; z:84 }
+camLookAt = { z:40 }
+ctrlSettings = { zoom:on; rotate:on; pan:off; minDist:160; maxDist:330; minPolarAng:0.2; maxPolarAng:1.5 }
+anmAuto = { quiet:300; rotH:-5; rotV:0; rotRev:off }

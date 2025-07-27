@@ -1,0 +1,37 @@
+// MODEL SETTINGS
+
+bgScene = { color:594d3e; useImg:off } 
+
+ALight = { color:0xcccccc; intensity:0.7 }
+
+Fog = { visible:on; color:bgc; near:300; far:550 }
+GroundGrid = { visible:on; size:1000; div:100; c_axis:887a82; c_grid:887a82 }
+
+ColorDefMat=887777
+
+FilesOBJinZIP=BunkerOBJ.zip
+
+LoadModel= { name:Bunker1; visible:on }				// <- base
+LoadModel= { name:Bunker2; visible:on }				// <- walls
+LoadModel= { name:Bunker3; visible:on }				// <- toilet
+LoadModel= { name:Bunker4; visible:on }				// <- tamburs
+LoadModel= { name:Bunker5; visible:on; RAxe:TrapAxe }		// <- trap
+LoadModel= { name:Bunker6; visible:on; RAxe:RCapAxe }		// <- right cap
+LoadModel= { name:Bunker7; visible:on; RAxe:LCapAxe }		// <- left cap
+LoadModel= { name:Bunker8; visible:on; RAxe:RlsBaseAxe }	// <- rls base
+LoadModel= { name:Bunker9; visible:on; RAxe:RlsSeg1Axe }	// <- rls segment 1
+LoadModel= { name:Bunker10; visible:on; RAxe:RlsSeg2Axe }	// <- rls segment 2
+LoadModel= { name:Bunker11; visible:on; RAxe:RlsHeadAxe }	// <- rls head
+
+RAxe= { name:TrapAxe; bX:39.25; bY:0.58; bZ:9.8; eX:39.25; eY:47.83; eZ:9.8; MinAng:0; MaxAng:110 }
+RAxe= { name:RCapAxe; bX:23.56; bY:47.36; bZ:64.8; eX:-41.73; eY:47.36; eZ:64.8; MinAng:0; MaxAng:45 }
+RAxe= { name:LCapAxe; bX:23.56; bY:-45.14; bZ:64.8; eX:-41.73; eY:-45.14; eZ:64.8; MinAng:-45; MaxAng:0 }
+RAxe= { name:RlsBaseAxe; bX:-9.36; bY:-6.45; bZ:8; eX:-9.36; eY:-6.45; eZ:55 }
+RAxe= { name:RlsSeg1Axe; parent:RlsBaseAxe; bX:10.67; bY:-2.9; bZ:47.65; eX:-4; eY:-26; eZ:47.65; MinAng:-90; MaxAng:-57 }
+RAxe= { name:RlsSeg2Axe; parent:RlsSeg1Axe; bX:-2.79; bY:5.98; bZ:73; eX:-17.81; eY:-17.66; eZ:73; MinAng:-8; MaxAng:5 }
+RAxe= { name:RlsHeadAxe; parent:RlsSeg2Axe; bX:7.39; bY:23; bZ:109.7; eX:-29.48; eY:-34.97; eZ:109.7; MinAng:-120; MaxAng:29 }
+
+camPos = { x:226; y:95; z:88 }
+camLookAt = { z:50 }
+ctrlSettings = { zoom:on; rotate:on; pan:off; minDist:160; maxDist:350; minPolarAng:0.2; maxPolarAng:1.5 }
+anmAuto = { quiet:300; rotH:-3; rotV:0; rotRev:off }

@@ -1,0 +1,19 @@
+// MODEL SETTINGS
+
+bgScene = { color:D0EEF4; useImg:off } 
+
+ALight = { color:0xffffff; intensity:0.9 }
+
+Fog = { visible:on; color:bgc; near:450; far:650 }
+GroundGrid = { visible:on; size:1000; div:100; c_axis:90AEB4; c_grid:90AEB4 }
+
+ColorDefMat=887777
+
+FilesOBJinZIP=GalTretOBJ.zip
+
+LoadModel= { name:GalTret; visible:on; }			// <- main
+
+camPos = { x:134.86; y:-134.5; z:94.54 }
+camLookAt = { z:33 }
+ctrlSettings = { zoom:on; rotate:on; pan:off; minDist:130; maxDist:340; minPolarAng:0.2; maxPolarAng:1.5 }
+anmAuto = { quiet:300; rotH:3; rotV:; rotRev:off }

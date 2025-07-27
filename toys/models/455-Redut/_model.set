@@ -1,0 +1,25 @@
+// MODEL SETTINGS
+
+bgScene = { color:445864; useImg:off } 
+
+ALight = { color:0xcccccc; intensity:0.9 }
+
+Fog = { visible:on; color:bgc; near:350; far:550 }
+GroundGrid = { visible:on; size:1000; div:100; c_axis:7f7681; c_grid:7f7681 }
+
+ColorDefMat=887777
+
+FilesOBJinZIP=RedutOBJ.zip
+
+LoadModel= { name:Redut1; visible:on }		// <- front
+LoadModel= { name:Redut2; visible:on }		// <- front cap
+LoadModel= { name:Redut3; visible:on }		// <- back
+LoadModel= { name:Redut4; visible:on }		// <- gun base
+LoadModel= { name:Redut5; visible:on }		// <- gun nest
+LoadModel= { name:Redut6; visible:on }		// <- gun lodgment
+LoadModel= { name:Redut7; visible:on }		// <- gun main
+
+camPos = { x:150; y:-226; z:171 }
+camLookAt = { z:40 }
+ctrlSettings = { zoom:on; rotate:on; pan:off; minDist:180; maxDist:430; minPolarAng:0.2; maxPolarAng:1.5; _minAzAng:0.5; _maxAzAng:2 }
+anmAuto = { quiet:300; rotH:5; rotV:0; rotRev:off }

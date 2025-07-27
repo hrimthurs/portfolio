@@ -1,0 +1,24 @@
+// MODEL SETTINGS
+
+bgScene = { color:D0EEF4; useImg:off } 
+
+ALight = { color:0xffffff; intensity:0.9 }
+
+Fog = { visible:on; color:bgc; near:450; far:650 }
+GroundGrid = { visible:on; size:1000; div:100; c_axis:90AEB4; c_grid:90AEB4 }
+
+ColorDefMat=887777
+
+FilesOBJinZIP=HermitOBJ.zip
+
+LoadModel= { name:Hermit1; visible:on; }			// <- base
+LoadModel= { name:Hermit2; visible:on; }			// <- walls
+LoadModel= { name:Hermit3; visible:on; }			// <- corridors
+LoadModel= { name:Hermit4; visible:on; }			// <- columns
+LoadModel= { name:Hermit5; visible:on; }			// <- cap
+LoadModel= { name:Hermit6; visible:on; }			// <- roof
+
+camPos = { x:174; y:-137; z:115 }
+camLookAt = { z:40 }
+ctrlSettings = { zoom:on; rotate:on; pan:off; minDist:200; maxDist:430; minPolarAng:0.2; maxPolarAng:1.65 }
+anmAuto = { quiet:300; rotH:3; rotV:; rotRev:off }

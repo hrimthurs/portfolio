@@ -1,0 +1,23 @@
+// MODEL SETTINGS
+
+bgScene = { color:D0EEF4; useImg:off } 
+
+ALight = { color:0xffffff; intensity:0.9 }
+PLight = { color:0xaaaaaa; intensity:0.8; dist:280; x:50; y:20; z:200 }
+
+
+Fog = { visible:on; color:bgc; near:450; far:650 }
+GroundGrid = { visible:on; size:1000; div:100; c_axis:90AEB4; c_grid:90AEB4 }
+
+ColorDefMat=887777
+
+FilesOBJinZIP=IsaakCatOBJ.zip
+
+LoadModel= { name:IsaakCat1; visible:on; }	// base
+LoadModel= { name:IsaakCat2; visible:on; }	// cap
+LoadModel= { name:IsaakCat3; visible:on; }	// head
+
+camPos = { x:230; y:-130; z:166 }
+camLookAt = { z:50 }
+ctrlSettings = { zoom:on; rotate:on; pan:off; minDist:150; maxDist:350; minPolarAng:0.2; maxPolarAng:1.7 }
+anmAuto = { quiet:300; rotH:3; rotV:; rotRev:off }

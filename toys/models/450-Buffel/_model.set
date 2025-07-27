@@ -1,0 +1,34 @@
+// MODEL SETTINGS
+
+bgScene = { color:594d3e; useImg:off } 
+
+ALight = { color:0xcccccc; intensity:0.7 }
+
+Fog = { visible:on; color:bgc; near:200; far:550 }
+GroundGrid = { visible:on; size:1000; div:100; c_axis:887a82; c_grid:887a82 }
+
+ColorDefMat=887777
+
+FilesOBJinZIP=BuffelOBJ.zip
+
+LoadModel= { name:Buffel1; visible:on }			// <- base
+LoadModel= { name:Buffel2; visible:on }			// <- wheels
+LoadModel= { name:Buffel3; visible:on }			// <- cabin
+LoadModel= { name:Buffel4; visible:on }			// <- cabin glass
+LoadModel= { name:Buffel5; visible:on; RAxe:CDoorAxe }	// <- door
+LoadModel= { name:Buffel6; visible:on; RAxe:CDoorAxe }	// <- door glass
+LoadModel= { name:Buffel7; visible:on }			// <- kuzov
+LoadModel= { name:Buffel8; visible:on; RAxe:RDoorAxe }	// <- kuzov door right
+LoadModel= { name:Buffel9; visible:on; RAxe:LDoorAxe }	// <- kuzov door left
+LoadModel= { name:Buffel10; visible:on }		// <- gun base
+LoadModel= { name:Buffel11; visible:on; RAxe:GunAxe }	// <- gun
+
+RAxe= { name:CDoorAxe; bX:48.4; bY:33.5; bZ:56; eX:48.4; eY:33.5; eZ:67; MinAng:-180; MaxAng:-76 }
+RAxe= { name:RDoorAxe; bX:-83.4; bY:-32.5; bZ:52.9; eX:25.3; eY:-32.5; eZ:52.9; MinAng:0; MaxAng:180 }
+RAxe= { name:LDoorAxe; bX:-83.4; bY:32.4; bZ:52.3; eX:25.3; eY:32.4; eZ:52.3; MinAng:0; MaxAng:180 }
+RAxe= { name:GunAxe; bX:27.9; bY:-97.7; bZ:26.15; eX:8.56; eY:-112.6; eZ:26.15; MinAng:88; MaxAng:107 }
+
+camPos = { x:197; y:-108; z:86 }
+camLookAt = { z:40 }
+ctrlSettings = { zoom:on; rotate:on; pan:off; minDist:150; maxDist:330; minPolarAng:0.2; maxPolarAng:1.5 }
+anmAuto = { quiet:300; rotH:5; rotV:; rotRev:off }

@@ -1,0 +1,28 @@
+// MODEL SETTINGS
+
+bgScene = { color:594d3e; useImg:off } 
+
+ALight = { color:0xcccccc; intensity:0.7 }
+
+Fog = { visible:on; color:bgc; near:200; far:550 }
+GroundGrid = { visible:on; size:1000; div:100; c_axis:887a82; c_grid:887a82 }
+
+ColorDefMat=887777
+
+FilesOBJinZIP=BronehodOBJ.zip
+
+LoadModel= { name:Bronehod1; visible:on; Rotate:on; RAxe:HeadAxe }		// <- head
+LoadModel= { name:Bronehod2; visible:on; parent:none }				// <- legs
+LoadModel= { name:Bronehod3; visible:on; parent:Bronehod1; RAxe:RGunAxe  }	// <- gun right
+LoadModel= { name:Bronehod4; visible:on; parent:Bronehod1; RAxe:LGunAxe }	// <- gun left
+LoadModel= { name:Bronehod5; visible:on; parent:Bronehod1; RAxe:FaceAxe }	// <- face
+
+RAxe= { name:HeadAxe; parent:none; bX:0; bY:0; bZ:120; eX:0; eY:0; eZ:0 }
+RAxe= { name:RGunAxe; parent:HeadAxe; bX:-26; bY:-44; bZ:88.21; eX:-26; eY:-16; eZ:88.21; BegAng:22.57; MinAng:-13; MaxAng:50 }
+RAxe= { name:LGunAxe; parent:HeadAxe; bX:-26; bY:16; bZ:88.21; eX:-26; eY:44; eZ:88.21; MinAng:-13; MaxAng:50 }
+RAxe= { name:FaceAxe; parent:HeadAxe; bX:17; bY:28; bZ:59.7; eX:17; eY:-28; eZ:59.7; MinAng:0; MaxAng:50 }
+
+camPos = { x:174; y:130; z:145 }
+camLookAt = { z:40 }
+ctrlSettings = { zoom:on; rotate:on; pan:off; minDist:200; maxDist:350; minPolarAng:0.2; maxPolarAng:1.5 }
+anmAuto = { quiet:100; rotH:-5; rotV:0; rotRev:off }

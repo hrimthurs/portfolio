@@ -1,0 +1,21 @@
+// MODEL SETTINGS
+
+bgScene = { color:e6dec7; useImg:off } 
+
+ALight = { color:0xffffff; intensity:0.9 }
+
+Fog = { visible:on; color:bgc; near:450; far:650 }
+GroundGrid = { visible:on; size:1000; div:100; c_axis:90AEB4; c_grid:90AEB4 }
+
+ColorDefMat=887777
+
+FilesOBJinZIP=MerkOBJ.zip
+
+LoadModel= { name:Merk1; visible:on; }			// <- base
+LoadModel= { name:Merk2; visible:on; }			// <- head
+LoadModel= { name:Merk3; visible:on; }			// <- add
+
+camPos = { x:120.27; y:-107.64; z:64.75 }
+camLookAt = { z:10 }
+ctrlSettings = { zoom:on; rotate:on; pan:off; minDist:115; maxDist:250; minPolarAng:0.2; maxPolarAng:1.5 }
+anmAuto = { quiet:300; rotH:3; rotV:; rotRev:off }

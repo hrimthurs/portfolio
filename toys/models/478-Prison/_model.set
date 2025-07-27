@@ -1,0 +1,31 @@
+// MODEL SETTINGS
+
+bgScene = { color:F4E8D3; useImg:off } 
+
+ALight = { color:0xcccccc; intensity:0.7 }
+
+Fog = { visible:on; color:bgc; near:350; far:600 }
+GroundGrid = { visible:on; size:1000; div:100; c_axis:7f7681; c_grid:7f7681 }
+
+ColorDefMat=887777
+
+FilesOBJinZIP=PrisonOBJ.zip
+
+LoadModel= { name:Prison1; visible:on; dside:off }	// <- house base
+LoadModel= { name:Prison2; visible:on; dside:off }	// <- floor 1 front wall
+LoadModel= { name:Prison3; visible:on; dside:off }	// <- floor 1 back walls
+LoadModel= { name:Prison4; visible:on; dside:off }	// <- floor 1 right door
+LoadModel= { name:Prison5; visible:on; dside:off }	// <- floor 1 left door
+LoadModel= { name:Prison6; visible:on; dside:off }	// <- floor 2 base
+LoadModel= { name:Prison7; visible:on; dside:off }	// <- floor 2 front wall
+LoadModel= { name:Prison8; visible:on; dside:off }	// <- floor 2 back wall
+LoadModel= { name:Prison9; visible:on; dside:off }	// <- floor 2 door
+LoadModel= { name:Prison10; visible:on; dside:off }	// <- cap
+LoadModel= { name:Prison11; visible:on; dside:off }	// <- wagon
+
+_RAxe= { name:FDoorAxe; bX:35.6; bY:9.4; bZ:1; eX:35.6; eY:9.4; eZ:44; MinAng:-231; MaxAng:-120 }
+
+camPos = { x:232; y:-251; z:123 }
+camLookAt = { z:40 }
+ctrlSettings = { zoom:on; rotate:on; pan:off; minDist:230; maxDist:440; minPolarAng:0.2; maxPolarAng:1.65 }
+anmAuto = { quiet:300; rotH:3; rotV:; rotRev:off }

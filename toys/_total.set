@@ -1,0 +1,3 @@
+// TOTAL SETTINGS
+
+bgScene = { color:F4E8D3; img:sceneBG_default.jpg; imgSize:auto } 

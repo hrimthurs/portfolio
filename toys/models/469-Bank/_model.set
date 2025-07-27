@@ -1,0 +1,26 @@
+// MODEL SETTINGS
+
+bgScene = { color:F4E8D3; useImg:off } 
+
+ALight = { color:0xcccccc; intensity:0.7 }
+
+Fog = { visible:on; color:bgc; near:350; far:600 }
+GroundGrid = { visible:on; size:1000; div:100; c_axis:7f7681; c_grid:7f7681 }
+
+ColorDefMat=887777
+
+FilesOBJinZIP=BankOBJ.zip
+
+LoadModel= { name:Bank1; visible:on; }			// <- base
+LoadModel= { name:Bank2; visible:on; }			// <- 1 floor
+LoadModel= { name:Bank3; visible:on; }			// <- door
+LoadModel= { name:Bank4; visible:on; }			// <- balkon
+LoadModel= { name:Bank5; visible:on; }			// <- 2 floor
+LoadModel= { name:Bank6; visible:on; }			// <- cap
+
+_RAxe= { name:FDoorAxe; bX:35.6; bY:9.4; bZ:1; eX:35.6; eY:9.4; eZ:44; MinAng:-231; MaxAng:-120 }
+
+camPos = { x:188; y:-184; z:155 }
+camLookAt = { z:40 }
+ctrlSettings = { zoom:on; rotate:on; pan:off; minDist:150; maxDist:400; minPolarAng:0.2; maxPolarAng:1.65 }
+anmAuto = { quiet:300; rotH:3; rotV:; rotRev:off }

@@ -1,0 +1,38 @@
+// MODEL SETTINGS
+
+bgScene = { color:594d3e; useImg:off } 
+
+ALight = { color:0xcccccc; intensity:0.7 }
+
+Fog = { visible:on; color:bgc; near:300; far:550 }
+GroundGrid = { visible:on; size:1000; div:100; c_axis:887a82; c_grid:887a82 }
+
+ColorDefMat=887777
+
+FilesOBJinZIP=WallOBJ.zip
+
+LoadModel= { name:Wall1; visible:on }			// <- corner
+LoadModel= { name:Wall2; visible:on; RAxe:RWingAxe }	// <- right wing
+LoadModel= { name:Wall3; visible:on; RAxe:LWingAxe }	// <- left wing
+LoadModel= { name:Wall4; visible:on; RAxe:RWingAxe }	// <- right wall
+LoadModel= { name:Wall5; visible:on; RAxe:RWingAxe }	// <- right wall cap1 
+LoadModel= { name:Wall6; visible:on; RAxe:RWingAxe }	// <- right wall cap2
+LoadModel= { name:Wall7; visible:on; RAxe:LWingAxe }	// <- left wall
+LoadModel= { name:Wall8; visible:on; RAxe:LWingAxe }	// <- left wall cap1 
+LoadModel= { name:Wall9; visible:on; RAxe:LWingAxe }	// <- left wall cap2
+LoadModel= { name:Wall10; visible:on; RAxe:GunBaseAxe }	// <- gun base
+LoadModel= { name:Wall11; visible:on; RAxe:GunSegAxe }	// <- gun segment
+LoadModel= { name:Wall12; visible:on; RAxe:GunAxe }	// <- gun 
+LoadModel= { name:Wall13; visible:on; RAxe:GunAxe }	// <- gun details
+LoadModel= { name:Wall14; visible:on }			// <- add wall
+
+RAxe= { name:RWingAxe; bX:7; bY:39.7; bZ:77; eX:7; eY:39.7; eZ:-10; MinAng:-44; MaxAng:0 }
+RAxe= { name:LWingAxe; bX:7; bY:-6.3; bZ:77; eX:7; eY:-6.3; eZ:-10; MinAng:0; MaxAng:44 }
+RAxe= { name:GunBaseAxe; bX:24.7; bY:16.7; bZ:85; eX:24.7; eY:16.7; eZ:42 }
+RAxe= { name:GunSegAxe; parent:GunBaseAxe; bX:26.7; bY:36; bZ:81.5; eX:42.48; eY:8.76; eZ:81.5; MinAng:-109; MaxAng:-32 }
+RAxe= { name:GunAxe; parent:GunSegAxe; bX:9.54; bY:26.14; bZ:95; eX:25.3; eY:-1.16; eZ:95; MinAng:-17; MaxAng:16 }
+
+camPos = { x:209; y:-100; z:139 }
+camLookAt = { z:50 }
+ctrlSettings = { zoom:on; rotate:on; pan:off; minDist:230; maxDist:420; minPolarAng:0.2; maxPolarAng:1.5 }
+anmAuto = { quiet:300; rotH:3; rotV:0; rotRev:off }
